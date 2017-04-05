@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php
-		include_once('home/catalog/connect.khan');
+	include_once('home/catalog/connect.khan');
 ?>
 
 
