@@ -13,14 +13,14 @@
 		  $localcab=mysqli_real_escape_string($dbconn,trim(strip_tags(stripslashes($_POST['localcab']))));
 		  $path="images/packages/".$_FILES['fileupld']['name'];
 			
-		  $query="INSERT INTO `packages` (`title`, `destination`, `duration`, `hotelstart`, `description`, `includeflights`, `price`, `path`, `localcab`) VALUES ('$title', '$destination', '$duration', '$hotelstar', '$description', '$price', '$includeflights', '$path', '$localcab');";
+		  $query="INSERT INTO `packages` (`title`, `destination`, `duration`, `hotelstar`, `description`, `includeflights`, `price`, `path`, `localcab`) VALUES ('$title', '$destination', '$duration', '$hotelstar', '$description', '$price', '$includeflights', '$path', '$localcab');";
 							
 		if(mysqli_query($dbconn,$query)){ 
 			
 			move_uploaded_file($_FILES['fileupld']['tmp_name'],$path);
 		
 		?>
-			<div id='msg' style='padding:7px; border: 0px solid; height:90px; background:#F90; opacity: 0.5; width:100%; margin:10px; border-radius:5px; color:#ffffff; font-size:18px;'><p>Data stored sucessfully ! </p>
+			<div  style='padding:7px; border: 0px solid; height:90px; background:#F90; opacity: 0.5; width:100%; margin:10px; border-radius:5px; color:#ffffff; font-size:18px;'><p>Data stored sucessfully ! </p>
 			 </div>
 			 <?php
 				
