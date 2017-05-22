@@ -32,7 +32,7 @@ include_once('home/catalog/connect.khan');
 
 <input type="text" id="searchtxtbox" placeholder="Search for Products" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search for Products';}"><input type="submit" value="SEARCH" onClick="search('search_div');">
 
-Results are:
+
 <div id="search_div" >
 
 </div>

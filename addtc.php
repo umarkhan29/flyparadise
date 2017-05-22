@@ -11,11 +11,8 @@
 ?>
 
 
-
-
-
 <?php
-	//uploading component here
+//uploading component here
 	include_once('home/components/addtc.khan');
 	
 ?>
